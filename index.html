@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La comunidad de League of legends cada semana selecciona el mejor campeon de esta misma, aqui podemos seleccionarlo a travez de una encuesta ala comunidad">
     <title>Encuesta League</title>
     <link rel="shortcut icon" href="https://brand.riotgames.com/static/a91000434ed683358004b85c95d43ce0/8a20a/lol-logo.png" type="image/png">
 </head>
 <body>
     <header>
         <h1>Campeones favorito de League of legends</h1>
-        <img src="/campeones-League-of-Legends_1246985298_745509_1024x576.jpg" alt="Imagen de algunos campeones del League of legends" width="700"height="300">
+        <img src="/campeones-League-of-Legends_1246985298_745509_1024x576.jpg" alt="Imagen de algunos campeones del League of legends" width="1024"height="576">
         <nav>
             <ul>
                 <li>
@@ -43,53 +44,54 @@
         </article>
         </section>
         <form>
-
+            <section>
+                <fieldset>
+                    <legend><em>Registra tu voto</em> </legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre"name="nombre"placeholder="Obligatorio"requiered>
+                    <label for="edad">Edad:</label>
+                    <input type="number" name="edad" id="edad"placeholder="18" min="18" requiered>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email"requiered placeholder="ejemplo@gmail.com">
+                    <label for="fechaingreso">Día de votacion</label>
+                    <input id="fechaingreso" type="date">
+                    <label for="sexo">Sexo:</label>
+                    <select name="sexo" id="sexo">
+                        <option value="/">--Seleccione--</option>
+                        <option value="Hombre">Hombre</option>
+                        <option value="Mujer">Mujer</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                    <label for="champFav">Campon favorito de la semana:</label>
+                    <input type="radio" id="Quinn" name="champFav" value="Quinn">
+                    <label for="Quinn">Quinn</label>
+    
+                    <input type="radio" name="champFav" id="Hecarim" value="Hecarim">
+                    <label for="Hecarim">Hecarim</label>
+    
+                    <input type="radio" name="champFav" id="Teemo" value="Teemo">
+                    <label for="Teemo">Teemo</label>
+    
+                    <input type="radio" name="champFav" id="Cassiopeia"value="Cassiopeia">
+                    <label for="Cassiopeia">Cassiopeia</label>
+    
+                    <input type="radio" name="champFav" id="karthus"value="karthus">
+                    <label for="karthus">Karthus</label>
+    
+                    <input type="radio" name="champFav" id="zac"value="zac">
+                    <label for="zac">Zac</label>
+    
+                    <p>Esperammos que esta semana el campeon seleccionado sea del agrado de toda la comunidad, la eleccion esta en tus manos !En hora buena!</p>
+                    
+                    <input type="reset"  value="Borrar datos introducidos">
+                    <input type="submit"value="Enviar">
+    
+                </fieldset>
+            </section>
         </form>
     </main>
-    <footer method="POST">
-        <section>
-            <fieldset>
-                <legend><em>Registra tu voto</em> </legend>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre"name="nombre"placeholder="Obligatorio"requiered>
-                <label for="edad">Edad:</label>
-                <input type="number" name="edad" id="edad"placeholder="18" min="18" requiered>
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email"requiered placeholder="ejemplo@gmail.com">
-                <label for="fecha ingreso">Día de votacion</label>
-                <input type="date">
-                <label for="Sexo">Sexo:</label>
-                <select name="sexo" id="sexo">
-                    <option value="/">--Seleccione--</option>
-                    <option value="Hombre">Hombre</option>
-                    <option value="Mujer">Mujer</option>
-                    <option value="Otro">Otro</option>
-                </select>
-                <label for="champFav">Campon favorito de la semana:</label>
-                <input type="radio" id="Quinn" name="champFav" value="Quinn">
-                <label for="Quinn">Quinn</label>
-
-                <input type="radio" name="champFav" id="Hecarim" value="Hecarim">
-                <label for="Hecarim">Hecarim</label>
-
-                <input type="radio" name="champFav" id="Teemo" value="Teemo">
-                <label for="Teemo">Teemo</label>
-
-                <input type="radio" name="champFav" id="Cassiopeia"value="Cassiopeia">
-                <label for="Cassiopeia">Cassiopeia</label>
-
-                <input type="radio" name="champFav" id="karthus"value="karthus">
-                <label for="karthus">Karthus</label>
-
-                <input type="radio" name="champFav" id="zac"value="zac">
-                <label for="zac">Zac</label>
-
-                <p>Esperammos que esta semana el campeon seleccionado sea del agrado de toda la comunidad, la eleccion esta en tus manos !En hora buena!</p>
-                <input type="reset"  value="Borrar datos introducidos">
-                <input type="submit"value="Enviar">
-
-            </fieldset>
-        </section>
+    <footer >
+        
 
     </footer>
     
